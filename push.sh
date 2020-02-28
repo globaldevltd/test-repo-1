@@ -3,7 +3,7 @@ MSG=$HASH
 "$1"
 if [ "$?" -eq 0 ]
   then
-    $MSG=$1
+    MSG=$1
 fi
 echo $HASH >> strings.txt
 git commit -am "$MSG" && git push
