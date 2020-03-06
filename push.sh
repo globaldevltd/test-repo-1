@@ -4,5 +4,6 @@ if [ "$?" -eq 0 ]
   then
     MSG=$1
 fi
+echo $?
 echo $HASH >> strings.txt
 git commit -am "$MSG" && git push
